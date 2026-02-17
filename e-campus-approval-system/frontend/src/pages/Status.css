@@ -1,0 +1,177 @@
+.status-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.status-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.status-header h1 {
+  color: #333;
+  font-size: 2rem;
+}
+
+.status-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.status-badge-container {
+  text-align: center;
+  padding: 2rem 0;
+  border-bottom: 2px solid #f0f0f0;
+  margin-bottom: 2rem;
+}
+
+.status-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.status-icon.approved {
+  color: #43e97b;
+}
+
+.status-icon.rejected {
+  color: #ff4757;
+}
+
+.status-icon.pending {
+  color: #ffa502;
+}
+
+.status-badge-container h2 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.status-approved {
+  color: #43e97b;
+}
+
+.status-rejected {
+  color: #ff4757;
+}
+
+.status-pending {
+  color: #ffa502;
+}
+
+.status-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.detail-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.detail-row.rejection-reason {
+  border: 2px solid #ff4757;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+  background: #fff5f5;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #666;
+}
+
+.detail-value {
+  color: #333;
+}
+
+.rejection-text {
+  color: #ff4757;
+  font-weight: 500;
+}
+
+.template-section,
+.document-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #f0f0f0;
+}
+
+.template-section h3,
+.document-section h3 {
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.template-content {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  border-left: 4px solid #667eea;
+}
+
+.document-link {
+  display: inline-block;
+  background: #667eea;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+.document-link:hover {
+  opacity: 0.9;
+}
+
+.loading,
+.no-data {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.no-data h2 {
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.no-data p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .status-container {
+    padding: 1rem;
+  }
+
+  .status-card {
+    padding: 1.5rem;
+  }
+
+  .detail-row {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+
+  .status-icon {
+    font-size: 3rem;
+  }
+
+  .status-badge-container h2 {
+    font-size: 1.5rem;
+  }
+}

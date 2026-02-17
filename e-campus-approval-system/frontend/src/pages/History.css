@@ -1,0 +1,152 @@
+.history-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.history-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.history-header h1 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.history-header p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.history-table-container {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.history-table th {
+  color: white;
+  padding: 1.2rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.history-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s ease;
+}
+
+.history-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.history-table td {
+  padding: 1.2rem;
+  color: #333;
+}
+
+.category-cell {
+  font-weight: 500;
+  color: #667eea;
+}
+
+.status-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.table-icon {
+  font-size: 1.2rem;
+}
+
+.table-icon.approved {
+  color: #43e97b;
+}
+
+.table-icon.rejected {
+  color: #ff4757;
+}
+
+.table-icon.pending {
+  color: #ffa502;
+}
+
+.status-badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge.approved {
+  background: #d4f8e8;
+  color: #22bb66;
+}
+
+.status-badge.rejected {
+  background: #ffe0e0;
+  color: #cc0000;
+}
+
+.status-badge.pending {
+  background: #fff3cd;
+  color: #cc8800;
+}
+
+.rejection-text {
+  color: #ff4757;
+  font-style: italic;
+}
+
+.no-data {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.no-data h2 {
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.no-data p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .history-container {
+    padding: 1rem;
+  }
+
+  .history-table-container {
+    overflow-x: auto;
+  }
+
+  .history-table {
+    min-width: 800px;
+  }
+
+  .history-table th,
+  .history-table td {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+}
